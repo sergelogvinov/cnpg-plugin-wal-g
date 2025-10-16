@@ -32,7 +32,7 @@ RUN cd $(go env GOPATH)/src/github.com/wal-g/wal-g && \
 
 # Controller Build section
 #
-FROM docker.io/golang:1.23-bookworm AS controller-builder
+FROM docker.io/golang:1.25-bookworm AS controller-builder
 ARG TARGETOS
 ARG TARGETARCH
 ARG GIT_TAG=v0.0.0-dev
